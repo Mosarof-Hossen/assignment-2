@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+/* needed-css */
+body{
+    background-color: #F5F8FF;
+}
+.all-container{
+    max-width: 79%;
+    margin: 0 auto;
+    
+   
+}
+img{
+    max-width: 100%;
+}
+
+/* needed-css-end */
+
+/* header-bar*/
+.header-menu-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.logo{
+    max-width: 15%;
+}
+.menu{
+    max-width: 85%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.menu-items{
+    display: flex;
+    list-style: none;
+    
+}
+.menu-items a{
+    text-decoration: none;
+    color: rgb(137, 135, 161);
+    font-family: "Inter";
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 24px;
+    transition: 1s;
+    margin: 0 20px;
+
+
+}
+
+.menu-items a:hover{
+    color: rgb(37, 36, 50);
+    
+}
+/* phone-device */
+
+
+/* banner-section-start */
+.banner{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 120px 0;
+}
+.banner-content{
+    max-width: 50%;
+}
+.banner-title{
+    font-family: "Noto" Serif;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 89px;
+    
+}
+
+.banner-heading{
+    color: #E95A08;
+}
+.banner-discreption{
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Inter";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    
+}
+.banner-image{
+    max-width: 50%;
+   
+}
+
+
+
+
+
+/* responsive-phone-device */
+@media screen and (max-width:576px) {
+    .all-container{
+    width: 100%;
+    margin: 0 auto;
+    
+   
+}
+.logo{
+    max-width: 50%;
+}
+.menu{
+    max-width: 50%;
+    
+
+}
+
+    .menu-item{
+        display: none;
+    }
+    .banner{
+        margin: 5px 0;
+   flex-direction: column-reverse;
+   justify-content: center;
+   
+  
+}
+.banner-content{
+    max-width: 100%;
+    margin-top: 30px;
+}
+.banner-image{
+    max-width: 100%;
+    margin-top: 60px;
+    
+   
+}
+.banner-title{
+    font-family: "Noto" Serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+    
+}
+.banner-discreption{
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    
+}
+    
+
+} 
