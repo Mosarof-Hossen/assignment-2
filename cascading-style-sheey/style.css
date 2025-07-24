@@ -165,6 +165,62 @@ img {
 }
 /* our-plant-section-end */
 /* our-flower-section-start */
+.plant-flower {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.flower-image {
+  width: 50%;
+  position: relative;
+}
+.animation-image{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: -100px;
+    right:-130px;
+    animation:so 2s linear  infinite ;
+}
+
+@keyframes so{
+ 0%{
+    transform: rotate(0deg);
+ }
+ 100%{
+    transform: rotate(360deg);
+ }
+}
+
+.flower-content {
+  width: 50%;
+  margin-left: 40px;
+}
+.flower-title {
+  color: rgb(0, 0, 0);
+  font-family: "Noto" Serif;
+  width: 540px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 68px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.flower-list {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Inter" sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  width: 540px;
+  margin-left: 30px;
+  margin-top: 90px;
+}
+
+/* latest-section */
 .latest-deals {
   text-align: center;
 }
@@ -317,8 +373,6 @@ img {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-
-  
 }
 .footer-ul {
   list-style: none;
@@ -494,10 +548,57 @@ img {
     margin-left: 18px;
   }
   /* footer-section */
-.footer-content {
+  .footer-content {
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 50px 0;
+    align-items: flex-start;
+  }
+  /* special-section */
+
+
+  .plant-flower {
   flex-direction: column;
-  justify-content: space-between;
-  margin: 50px 0;
-  align-items: flex-start;
+  
+  
+ 
+  gap: 50px;
+}
+
+.flower-image {
+  width: 100%;
+  
+}
+.animation-image{
+    
+    display: none;
+}
+
+
+
+.flower-content {
+  width: 100%;
+  
+}
+.flower-title {
+  color: rgb(0, 0, 0);
+  font-family: "Noto" Serif;
+  max-width: 540px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 68px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.flower-list {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Inter" sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+ 
+  
+  
+  
+
 }
 }
