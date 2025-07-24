@@ -1,156 +1,160 @@
 *{
     padding: 0;
     margin: 0;
-    
+    box-sizing: border-box;
 }
-/* needed-css */
-body{
-    background-color: #F5F8FF;
-}
+
+/* all-needed-css */
 .all-container{
-    max-width: 79%;
+    width: 79%;
     margin: 0 auto;
-    
-   
+}
+.all-section{
+    background-color: rgb(245, 248, 255);
 }
 img{
-    max-width: 100%;
+    width: 100%;
 }
-
 /* needed-css-end */
-
-/* header-bar*/
-.header-menu-bar{
+/* navbar-start */
+.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 30px;
+    
 }
 .logo{
-    max-width: 15%;
-}
-.menu{
-    max-width: 85%;
-    display: flex;
-    justify-content: flex-end;
-
+    margin-top: 40px;
 }
 .menu-items{
     display: flex;
+    justify-content: space-between;
     list-style: none;
-    
+    gap: 48px;
+    margin-top: 40px;
+
 }
+
 .menu-items a{
+    gap: 48px;
     text-decoration: none;
-    color: rgb(137, 135, 161);
-    font-family: "Inter";
+    color:rgb(137, 135, 161);
+    transition: 0.9;
+    font-family: "Inter" sans-serif;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 24px;
-    transition: 1s;
-    margin: 0 20px;
-
 
 }
-
 .menu-items a:hover{
     color: rgb(37, 36, 50);
-    
 }
-/* phone-device */
+.menu-bar-color{
+    color: rgb(37, 36, 50);
+}
+/* navbar-mobile */
+.navbar-mobile{
+     display: none;
+    justify-content: space-between;
+    align-items: center;
+}
 
+/* navbar-mobile-end */
+/* banner-section */
+.section-m{
+    margin: 120px 0;
+}
 
-/* banner-section-start */
 .banner{
-   
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin: 120px 0;
 }
 .banner-content{
     max-width: 50%;
 }
+.banner-image{
+    max-width: 50%;
+}
+/* banner-title */
+
+.banner-title-w{
+    max-width: 570px;
+}
+
 .banner-title{
-    font-family: "Noto" Serif;
+    font-family: Noto Serif;
     font-size: 65px;
     font-weight: 700;
     line-height: 89px;
-    
+    letter-spacing: 0%;
+    text-align: left;
 }
 
-.banner-heading{
-    color: #E95A08;
+.color-h{
+   color: rgb(233, 90, 8);
 }
+/* banner- discreption */
 .banner-discreption{
     color: rgba(0, 0, 0, 0.5);
-    font-family: "Inter";
-    font-size: 22px;
+    font-family: "Inter" sans-serif;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 27px;
-    
-}
-.banner-image{
-    max-width: 50%;
+    line-height: 17px;
    
 }
 
 
 
 
-
-/* responsive-phone-device */
-@media screen and (max-width:576px) {
-    .all-container{
-    width: 100%;
-    margin: 0 auto;
+/* mobile-responsive */
+@media (max-width:676px) {
+   .navbar{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
     
-   
 }
-.logo{
-    max-width: 50%;
-}
-.menu{
-    max-width: 50%;
-    
-
+.navbar-mobile{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-    .menu-item{
-        display: none;
-    }
-    .banner{
-        margin: 5px 0;
+/* banner-section-responsive */
+.section-m{
+    margin: 120px 0;
+}
+
+.banner{
    flex-direction: column-reverse;
-   justify-content: center;
-   
   
+   align-items: flex-start;
 }
 .banner-content{
     max-width: 100%;
-    margin-top: 30px;
 }
 .banner-image{
     max-width: 100%;
-    margin-top: 60px;
-    
-   
 }
+/* banner-title */
+
+.banner-title-w{
+    max-width: 570px;
+}
+
 .banner-title{
     font-family: "Noto" Serif;
-    font-size: 22px;
+    font-size: 1.5rem;
     font-weight: 700;
-    line-height: 30px;
-    
+    line-height: 36px;
+   margin-top: 30px;
 }
-.banner-discreption{
-    color: rgba(0, 0, 0, 0.5);
-    font-family: "Inter";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    
-}
-    
 
-} 
+.banner-discreption{
+margin-top: 10px;
+}
+
+
+    
+}
