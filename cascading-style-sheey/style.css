@@ -271,16 +271,14 @@ img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url("../image/news-letter-bg.png");
   padding: 200px 0;
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
   margin-top: -120px;
-  
 }
 .news {
   width: 830px;
   margin: auto;
-  
 }
 .news-title {
   color: rgb(255, 255, 255);
@@ -300,10 +298,50 @@ img {
   padding: 16px;
   font-size: 1rem;
   width: 25%;
-  background-color: #E95A08;
+  background-color: #e95a08;
   border: none;
   margin-left: -4px;
   color: white;
+}
+/* footer-section */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+  align-items: flex-start;
+}
+.footer-discreption {
+  width: 360px;
+  color: rgb(107, 114, 128);
+  font-family: "Inter" sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+
+  
+}
+.footer-ul {
+  list-style: none;
+}
+.footer-ul li {
+  margin: 32px;
+}
+.footer-ul a {
+  text-decoration: none;
+
+  color: rgb(107, 114, 128);
+  font-family: "Inter" sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+
+  text-align: center;
+}
+.footer-icon {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
 }
 
 /* mobile-responsive */
@@ -437,22 +475,29 @@ img {
     font-size: 20px;
   }
   .news {
-  width: 100%;
-  margin: auto;
-}
-.news-title {
-  color: rgb(255, 255, 255);
-  font-family: " Noto" Serif;
-  font-size: 24px;
-  font-weight: 900;
-  line-height: 30px;
-  
-  text-align: center;
-}
-.news-form {
-  padding: 15px;
-  font-size: 1rem;
-  width: 65%;
-  margin-left: 18px;
+    width: 100%;
+    margin: auto;
+  }
+  .news-title {
+    color: rgb(255, 255, 255);
+    font-family: " Noto" Serif;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 30px;
+
+    text-align: center;
+  }
+  .news-form {
+    padding: 15px;
+    font-size: 1rem;
+    width: 65%;
+    margin-left: 18px;
+  }
+  /* footer-section */
+.footer-content {
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 50px 0;
+  align-items: flex-start;
 }
 }
