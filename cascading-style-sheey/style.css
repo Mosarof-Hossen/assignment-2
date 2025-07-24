@@ -193,7 +193,8 @@ img {
   justify-content: space-evenly;
 
   gap: 28px;
-  margin: 100px 0;
+  margin-top: 100px;
+  padding-bottom: 100px;
 }
 
 .latest-card-1 {
@@ -232,7 +233,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
+  padding: 180px 0;
   text-align: center;
   border-radius: 24px;
 }
@@ -255,14 +256,54 @@ img {
   line-height: 32px;
   text-decoration: underline;
 }
-.l-title-1{
-color: rgb(255, 255, 255);
-font-family: Noto Serif;
-font-size: 20px;
-font-weight: 700;
-line-height: 27px;
-letter-spacing: 0%;
-text-align: center;
+.l-title-1 {
+  color: rgb(255, 255, 255);
+  font-family: Noto Serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+/* full-width-section */
+.section-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("../image/news-letter-bg.png");
+  padding: 200px 0;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  margin-top: -120px;
+  
+}
+.news {
+  width: 830px;
+  margin: auto;
+  
+}
+.news-title {
+  color: rgb(255, 255, 255);
+  font-family: " Noto" Serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 68px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.news-form {
+  padding: 15px;
+  font-size: 1rem;
+  width: 70%;
+}
+.news-btn {
+  padding: 16px;
+  font-size: 1rem;
+  width: 25%;
+  background-color: #E95A08;
+  border: none;
+  margin-left: -4px;
+  color: white;
 }
 
 /* mobile-responsive */
@@ -379,25 +420,39 @@ text-align: center;
     width: 336px;
     margin: 0 auto;
   }
-  .latest-card{
+  .latest-card {
     flex-direction: column;
-    gap: 20;  
-}
-.latest-card-1 {
+    gap: 20;
+  }
+  .latest-card-1 {
     width: 100%;
-}
-.latest-card-2{
+  }
+  .latest-card-2 {
+    width: 100%;
+  }
+
+  .latest-title {
+    color: rgb(255, 255, 255);
+    font-family: "Noto" Serif;
+    font-size: 20px;
+  }
+  .news {
   width: 100%;
+  margin: auto;
+}
+.news-title {
+  color: rgb(255, 255, 255);
+  font-family: " Noto" Serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 30px;
   
+  text-align: center;
 }
-
-.latest-title{
-color: rgb(255, 255, 255);
-font-family: "Noto" Serif;
-font-size: 20px;
-
+.news-form {
+  padding: 15px;
+  font-size: 1rem;
+  width: 65%;
+  margin-left: 18px;
 }
-
 }
-
-
