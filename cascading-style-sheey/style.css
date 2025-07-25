@@ -209,7 +209,7 @@ img {
   letter-spacing: 0%;
   text-align: left;
 }
-.flower-list {
+.flower-list li {
   color: rgba(0, 0, 0, 0.5);
   font-family: "Inter" sans-serif;
   font-size: 22px;
@@ -217,7 +217,7 @@ img {
   line-height: 27px;
   width: 540px;
   margin-left: 30px;
-  margin-top: 90px;
+  margin-top: 9px;
 }
 
 /* latest-section */
@@ -557,48 +557,58 @@ img {
   /* special-section */
 
 
-  .plant-flower {
+  /* flower-plan-section */
+.plant-flower {
   flex-direction: column;
-  
-  
- 
-  gap: 50px;
+  width: calc(100% - 50px);
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
 }
+
+/* kk */
+
 
 .flower-image {
   width: 100%;
-  
+  position: none;
 }
 .animation-image{
     
     display: none;
 }
-
-
-
 .flower-content {
   width: 100%;
+  margin-left: 0px;
+  display: block;
   
 }
 .flower-title {
   color: rgb(0, 0, 0);
   font-family: "Noto" Serif;
-  max-width: 540px;
+  width: 540px;
   font-size: 24px;
   font-weight: 700;
-  line-height: 68px;
-  letter-spacing: 0%;
-  text-align: left;
+  line-height: auto;
+  
 }
-.flower-list {
+.flower-list li{
   color: rgba(0, 0, 0, 0.5);
   font-family: "Inter" sans-serif;
   font-size: 14px;
   font-weight: 400;
+  line-height: auto;
+  max-width: 100%;
+ 
  
   
   
+}
   
+}
 
-}
-}
+
+
+
+
+
